@@ -61,8 +61,7 @@ hydra-core==1.1.1
 idna==2.8
 imageio==2.13.5
 imageio-ffmpeg==0.4.5
-# imagenetv2-pytorch==0.1
-#git+https://github.com/modestyachts/ImageNetV2_pytorch 
+git+https://github.com/modestyachts/ImageNetV2_pytorch #imagenetv2-pytorch==0.1
 importlib-metadata==1.5.0
 importlib-resources==5.4.0
 iopath==0.1.9
@@ -149,8 +148,7 @@ s3transfer==0.5.0
 sacrebleu==1.4.4
 sacremoses==0.0.46
 scikit-learn==0.22.2.post1
-#scipy==1.5.4
-scipy==1.4.1
+scipy==1.4.1#scipy==1.5.4
 secretstorage==3.3.1
 send2trash==1.8.0
 sentencepiece==0.1.90
@@ -162,8 +160,7 @@ six==1.13.0
 smmap==4.0.0
 soupsieve==2.3.1
 tabulate==0.8.9
-#tensorboard==2.4.1
-tensorboard==2.2.0
+tensorboard==2.2.0#tensorboard==2.4.1
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
 tensorflow==2.2.0
@@ -198,4 +195,3 @@ yapf==0.31.0
 zipp==3.1.0
 zope-event==4.5.0
 zope-interface==5.4.0
-# wandb
