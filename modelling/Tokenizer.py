@@ -50,6 +50,9 @@ class TextTokenizer(BaseTokenizer):
             self.token2id = defaultdict(lambda:self.unk_index, self.token2id)
             self.ignore_index = self.pad_index
         elif self.level == 'sentencepiece':
+
+            print("test a test:",tokenizer_cfg)
+
             self.tokenizer = MBartTokenizer.from_pretrained(
                 **tokenizer_cfg) #tgt_lang
             self.pad_index = self.tokenizer.convert_tokens_to_ids('<pad>')

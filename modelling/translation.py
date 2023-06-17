@@ -14,6 +14,8 @@ class TranslationNetwork(torch.nn.Module):
         assert self.input_type in ['gloss','feature']
         self.text_tokenizer = TextTokenizer(tokenizer_cfg=cfg['TextTokenizer'])
 
+
+        # print("My overwrite_cfg:",**cfg.get('overwrite_cfg'))
         if 'pretrained_model_name_or_path' in cfg:
             self.logger.info('Initialize translation network from {}'.format(cfg['pretrained_model_name_or_path']))
             self.model = MBartForConditionalGeneration.from_pretrained(
@@ -81,11 +83,13 @@ class TranslationNetwork(torch.nn.Module):
             
     def load_from_pretrained_ckpt(self, pretrained_ckpt):
         logger = get_logger()
+        # print("my print pretrained_ckpt", pretrained_ckpt)
         checkpoint = torch.load(pretrained_ckpt, map_location='cpu')['model_state']
         load_dict = {}
         for k,v in checkpoint.items():
             if 'translation_network' in k:
                 load_dict[k.replace('translation_network.','')] = v
+                # print("my print load_dict k:",v)
         self.load_state_dict(load_dict)
         logger.info('Load Translation network from pretrained ckpt {}'.format(pretrained_ckpt))
 

@@ -49,10 +49,12 @@ class SignLanguageModel(torch.nn.Module):
                 self.recognition_network.eval()
 
             input_type = model_cfg['TranslationNetwork'].pop('input_type','feature')
+            # print("报错位置 there")
             self.translation_network = TranslationNetwork(
                 input_type=input_type, 
                 cfg=model_cfg['TranslationNetwork'], 
                 task=self.task)
+            # print("报错位置 there")
             self.text_tokenizer = self.translation_network.text_tokenizer
             self.gloss_tokenizer = self.recognition_network.gloss_tokenizer 
             if model_cfg['VLMapper'].get('type','projection') == 'projection':

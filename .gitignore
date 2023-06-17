@@ -1,0 +1,18 @@
+.vscode/
+data/csl-daily/*
+data/phoenix-2014/*
+data/phoenix-2014t/*
+#checkpoint download from README
+experiments/outputs/SingleStream/phoenix-2014t_g2t/
+experiments/outputs/SingleStream/phoenix-2014t_s2g/
+experiments/outputs/SingleStream/phoenix-2014t_s2t/
+#download from README
+pretrained_models/
+#virtual environment
+~/
+#produced after run
+dataset/__pycache__
+modelling/__pycache__
+modelling/models_3d/S3D/__pycache__
+utils/__pycache__
+utils/external_metrics/__pycache__

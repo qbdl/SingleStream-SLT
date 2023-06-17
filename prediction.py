@@ -181,6 +181,7 @@ def evaluation(model, val_dataloader, cfg,
 
 
 if __name__ == "__main__":
+    print("aaa")
     parser = argparse.ArgumentParser("SLT baseline Testing")
     parser.add_argument(
         "--config",
@@ -198,8 +199,11 @@ if __name__ == "__main__":
         default='best.ckpt',
         type=str
     )
+    print("bbb")
     args = parser.parse_args()
+    print("ccc")
     cfg = load_config(args.config)
+    print("ddd")
     model_dir = cfg['training']['model_dir']
     os.makedirs(model_dir, exist_ok=True)
     global logger
