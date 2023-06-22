@@ -115,7 +115,7 @@ def evaluation(model, val_dataloader, cfg,
                 #decoded_sequences
                 for name, txt_hyp, txt_ref in zip(batch['name'], generate_output['decoded_sequences'], batch['text']):
                     results[name]['txt_hyp'], results[name]['txt_ref'] = txt_hyp, txt_ref
-                    print(f"Name: {name}\nTranslated Text: {txt_hyp}\nOriginal Text: {txt_ref}\n{'-'*50}")
+                    # print(f"Name: {name}\nTranslated Text: {txt_hyp}\nOriginal Text: {txt_ref}\n{'-'*50}")
             #misc
             if pbar:
                 pbar(step)

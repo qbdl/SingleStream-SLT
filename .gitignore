@@ -1,13 +1,18 @@
 .vscode/
 data/csl-daily/*
 data/phoenix-2014/*
-data/phoenix-2014t/*
+data/phoenix-2014t/PHOENIX-2014-T-release-v3/
+data/phoenix-2014t/phoenix-2014-T.v3.tar.gz/
 #checkpoint download from README
 experiments/outputs/SingleStream/phoenix-2014t_g2t/
 experiments/outputs/SingleStream/phoenix-2014t_s2g/
 experiments/outputs/SingleStream/phoenix-2014t_s2t/
+experiments/outputs/SingleStream/csl-daily_g2t/
+experiments/outputs/SingleStream/csl-daily_s2g/
+experiments/outputs/SingleStream/csl-daily_s2t/
 #download from README
 pretrained_models/
+*.zip
 #virtual environment
 ~/
 #produced after run
@@ -16,3 +21,5 @@ modelling/__pycache__
 modelling/models_3d/S3D/__pycache__
 utils/__pycache__
 utils/external_metrics/__pycache__
+__pycache__/
+.ipynb_checkpoints/

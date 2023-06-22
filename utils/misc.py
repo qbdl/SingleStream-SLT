@@ -220,8 +220,10 @@ def is_main_process():
 
 def init_DDP():
     local_rank = int(os.environ['LOCAL_RANK'])
+    print("init_DDP local_rank: ", local_rank)
     torch.cuda.set_device(local_rank)
     device = torch.device('cuda:{}'.format(local_rank))
+    print("init_DDP device: ", device)
     torch.distributed.init_process_group(backend="nccl", init_method="env://")    
     return local_rank, int(os.environ['WORLD_SIZE']), device
 
