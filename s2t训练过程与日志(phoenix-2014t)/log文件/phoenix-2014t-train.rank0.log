@@ -1,0 +1,504 @@
+2023-06-20 22:43:21,009 Initialize translation network from pretrained_models/mBart_de
+2023-06-20 22:43:24,929 gloss2embed_file pretrained_models/mBart_de/gloss_embeddings.bin
+2023-06-20 22:43:25,670 Initialize gloss embedding from pretrained_models/mBart_de/gloss_embeddings.bin
+2023-06-20 22:43:26,958 Load Translation network from pretrained ckpt experiments/outputs/SingleStream/phoenix-2014t_g2t/ckpts/best.ckpt
+2023-06-20 22:43:27,207 # Total parameters = 367363142
+2023-06-20 22:43:27,207 # Total trainable parameters = 367363142
+2023-06-20 22:43:31,835 learning rate recognition_network=0.001
+2023-06-20 22:43:31,835 learning rate translation_network=1e-05
+2023-06-20 22:43:31,835 learning rate vl_mapper=0.001
+2023-06-20 22:43:31,840 Epoch 0, Training examples 7096
+2023-06-20 22:47:16,218 Epoch 1, Training examples 7096
+2023-06-20 22:47:45,611 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 22:47:45,612 Evaluation global step=1000 validation examples #=519
+2023-06-20 22:48:24,226 translation_loss Average:27.17
+2023-06-20 22:48:24,227 recognition_loss Average:11.19
+2023-06-20 22:48:24,228 total_loss Average:38.36
+2023-06-20 22:48:24,502 WER: 33.23
+2023-06-20 22:48:24,679 bleu1 39.60
+2023-06-20 22:48:24,679 bleu2 26.89
+2023-06-20 22:48:24,679 bleu3 19.78
+2023-06-20 22:48:24,679 bleu4 15.54
+2023-06-20 22:48:24,679 ROUGE: 40.12
+2023-06-20 22:48:24,682 best_score=15.54
+2023-06-20 22:48:28,966 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_1000.ckpt
+2023-06-20 22:51:54,178 Epoch 2, Training examples 7096
+2023-06-20 22:52:55,011 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 22:52:55,012 Evaluation global step=2000 validation examples #=519
+2023-06-20 22:53:38,633 translation_loss Average:25.41
+2023-06-20 22:53:38,634 recognition_loss Average:9.79
+2023-06-20 22:53:38,634 total_loss Average:35.20
+2023-06-20 22:53:38,934 WER: 28.40
+2023-06-20 22:53:39,128 bleu1 46.74
+2023-06-20 22:53:39,128 bleu2 33.79
+2023-06-20 22:53:39,128 bleu3 26.11
+2023-06-20 22:53:39,129 bleu4 20.83
+2023-06-20 22:53:39,129 ROUGE: 46.26
+2023-06-20 22:53:39,131 best_score=20.83
+2023-06-20 22:53:43,571 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_2000.ckpt
+2023-06-20 22:56:42,419 Epoch 3, Training examples 7096
+2023-06-20 22:58:13,775 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 22:58:13,776 Evaluation global step=3000 validation examples #=519
+2023-06-20 22:58:57,359 translation_loss Average:24.86
+2023-06-20 22:58:57,360 recognition_loss Average:9.80
+2023-06-20 22:58:57,362 total_loss Average:34.66
+2023-06-20 22:58:57,648 WER: 27.68
+2023-06-20 22:58:57,839 bleu1 48.66
+2023-06-20 22:58:57,839 bleu2 35.57
+2023-06-20 22:58:57,840 bleu3 27.60
+2023-06-20 22:58:57,840 bleu4 22.37
+2023-06-20 22:58:57,840 ROUGE: 48.36
+2023-06-20 22:58:57,842 best_score=22.37
+2023-06-20 22:59:01,862 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_3000.ckpt
+2023-06-20 23:01:30,531 Epoch 4, Training examples 7096
+2023-06-20 23:03:31,463 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:03:31,464 Evaluation global step=4000 validation examples #=519
+2023-06-20 23:04:15,648 translation_loss Average:24.64
+2023-06-20 23:04:15,649 recognition_loss Average:9.29
+2023-06-20 23:04:15,649 total_loss Average:33.93
+2023-06-20 23:04:15,944 WER: 26.45
+2023-06-20 23:04:16,134 bleu1 48.48
+2023-06-20 23:04:16,134 bleu2 35.84
+2023-06-20 23:04:16,134 bleu3 28.07
+2023-06-20 23:04:16,134 bleu4 22.87
+2023-06-20 23:04:16,134 ROUGE: 48.37
+2023-06-20 23:04:16,137 best_score=22.87
+2023-06-20 23:04:20,643 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_4000.ckpt
+2023-06-20 23:06:20,242 Epoch 5, Training examples 7096
+2023-06-20 23:08:50,485 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:08:50,487 Evaluation global step=5000 validation examples #=519
+2023-06-20 23:09:33,958 translation_loss Average:24.55
+2023-06-20 23:09:33,959 recognition_loss Average:9.26
+2023-06-20 23:09:33,959 total_loss Average:33.82
+2023-06-20 23:09:34,252 WER: 26.45
+2023-06-20 23:09:34,440 bleu1 49.74
+2023-06-20 23:09:34,440 bleu2 36.59
+2023-06-20 23:09:34,440 bleu3 28.60
+2023-06-20 23:09:34,440 bleu4 23.28
+2023-06-20 23:09:34,440 ROUGE: 49.57
+2023-06-20 23:09:34,443 best_score=23.28
+2023-06-20 23:09:38,339 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_5000.ckpt
+2023-06-20 23:11:08,540 Epoch 6, Training examples 7096
+2023-06-20 23:14:08,529 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:14:08,530 Evaluation global step=6000 validation examples #=519
+2023-06-20 23:14:52,427 translation_loss Average:24.17
+2023-06-20 23:14:52,428 recognition_loss Average:9.39
+2023-06-20 23:14:52,429 total_loss Average:33.56
+2023-06-20 23:14:52,722 WER: 26.21
+2023-06-20 23:14:52,911 bleu1 50.74
+2023-06-20 23:14:52,911 bleu2 38.10
+2023-06-20 23:14:52,911 bleu3 30.26
+2023-06-20 23:14:52,911 bleu4 24.94
+2023-06-20 23:14:52,911 ROUGE: 50.50
+2023-06-20 23:14:52,914 best_score=24.94
+2023-06-20 23:14:57,637 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_6000.ckpt
+2023-06-20 23:15:58,415 Epoch 7, Training examples 7096
+2023-06-20 23:19:28,314 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:19:28,315 Evaluation global step=7000 validation examples #=519
+2023-06-20 23:20:11,725 translation_loss Average:24.41
+2023-06-20 23:20:11,726 recognition_loss Average:9.66
+2023-06-20 23:20:11,726 total_loss Average:34.07
+2023-06-20 23:20:12,015 WER: 26.61
+2023-06-20 23:20:12,209 bleu1 50.24
+2023-06-20 23:20:12,209 bleu2 37.47
+2023-06-20 23:20:12,209 bleu3 29.58
+2023-06-20 23:20:12,209 bleu4 24.29
+2023-06-20 23:20:12,209 ROUGE: 49.91
+2023-06-20 23:20:12,212 best_score=24.94
+2023-06-20 23:20:16,568 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_7000.ckpt
+2023-06-20 23:20:42,098 Epoch 8, Training examples 7096
+2023-06-20 23:24:39,533 Epoch 9, Training examples 7096
+2023-06-20 23:24:45,557 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:24:45,589 Evaluation global step=8000 validation examples #=519
+2023-06-20 23:25:26,173 translation_loss Average:26.67
+2023-06-20 23:25:26,173 recognition_loss Average:9.84
+2023-06-20 23:25:26,174 total_loss Average:36.51
+2023-06-20 23:25:26,461 WER: 26.58
+2023-06-20 23:25:26,639 bleu1 45.34
+2023-06-20 23:25:26,639 bleu2 33.36
+2023-06-20 23:25:26,639 bleu3 26.26
+2023-06-20 23:25:26,639 bleu4 21.66
+2023-06-20 23:25:26,639 ROUGE: 46.74
+2023-06-20 23:25:26,642 best_score=24.94
+2023-06-20 23:25:30,670 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_8000.ckpt
+2023-06-20 23:29:21,058 Epoch 10, Training examples 7096
+2023-06-20 23:29:56,826 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:29:56,827 Evaluation global step=9000 validation examples #=519
+2023-06-20 23:30:48,225 translation_loss Average:24.58
+2023-06-20 23:30:48,226 recognition_loss Average:9.59
+2023-06-20 23:30:48,227 total_loss Average:34.17
+2023-06-20 23:30:48,521 WER: 25.38
+2023-06-20 23:30:48,711 bleu1 50.46
+2023-06-20 23:30:48,711 bleu2 37.63
+2023-06-20 23:30:48,711 bleu3 29.71
+2023-06-20 23:30:48,711 bleu4 24.31
+2023-06-20 23:30:48,711 ROUGE: 49.86
+2023-06-20 23:30:48,714 best_score=24.94
+2023-06-20 23:30:53,277 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_9000.ckpt
+2023-06-20 23:34:12,633 Epoch 11, Training examples 7096
+2023-06-20 23:35:18,705 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:35:18,706 Evaluation global step=10000 validation examples #=519
+2023-06-20 23:36:03,079 translation_loss Average:24.92
+2023-06-20 23:36:03,081 recognition_loss Average:9.50
+2023-06-20 23:36:03,081 total_loss Average:34.42
+2023-06-20 23:36:03,378 WER: 25.35
+2023-06-20 23:36:03,567 bleu1 51.70
+2023-06-20 23:36:03,567 bleu2 39.04
+2023-06-20 23:36:03,567 bleu3 31.15
+2023-06-20 23:36:03,567 bleu4 25.78
+2023-06-20 23:36:03,567 ROUGE: 51.21
+2023-06-20 23:36:03,570 best_score=25.78
+2023-06-20 23:36:08,084 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_10000.ckpt
+2023-06-20 23:39:02,344 Epoch 12, Training examples 7096
+2023-06-20 23:40:37,643 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:40:37,644 Evaluation global step=11000 validation examples #=519
+2023-06-20 23:41:45,953 translation_loss Average:24.71
+2023-06-20 23:41:45,954 recognition_loss Average:9.82
+2023-06-20 23:41:45,954 total_loss Average:34.53
+2023-06-20 23:41:46,253 WER: 25.91
+2023-06-20 23:41:46,448 bleu1 51.54
+2023-06-20 23:41:46,448 bleu2 38.92
+2023-06-20 23:41:46,448 bleu3 31.06
+2023-06-20 23:41:46,449 bleu4 25.67
+2023-06-20 23:41:46,449 ROUGE: 51.27
+2023-06-20 23:41:46,451 best_score=25.78
+2023-06-20 23:41:51,567 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_11000.ckpt
+2023-06-20 23:44:11,265 Epoch 13, Training examples 7096
+2023-06-20 23:46:16,636 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:46:16,637 Evaluation global step=12000 validation examples #=519
+2023-06-20 23:47:00,689 translation_loss Average:24.97
+2023-06-20 23:47:00,689 recognition_loss Average:9.85
+2023-06-20 23:47:00,690 total_loss Average:34.82
+2023-06-20 23:47:00,984 WER: 26.15
+2023-06-20 23:47:01,176 bleu1 52.64
+2023-06-20 23:47:01,177 bleu2 40.18
+2023-06-20 23:47:01,177 bleu3 32.30
+2023-06-20 23:47:01,177 bleu4 26.92
+2023-06-20 23:47:01,177 ROUGE: 51.80
+2023-06-20 23:47:01,179 best_score=26.92
+2023-06-20 23:47:06,527 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_12000.ckpt
+2023-06-20 23:49:00,825 Epoch 14, Training examples 7096
+2023-06-20 23:51:35,889 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:51:35,890 Evaluation global step=13000 validation examples #=519
+2023-06-20 23:52:44,418 translation_loss Average:25.17
+2023-06-20 23:52:44,419 recognition_loss Average:9.91
+2023-06-20 23:52:44,420 total_loss Average:35.07
+2023-06-20 23:52:44,707 WER: 24.61
+2023-06-20 23:52:44,900 bleu1 51.30
+2023-06-20 23:52:44,900 bleu2 38.79
+2023-06-20 23:52:44,900 bleu3 31.10
+2023-06-20 23:52:44,900 bleu4 25.91
+2023-06-20 23:52:44,900 ROUGE: 50.80
+2023-06-20 23:52:44,903 best_score=26.92
+2023-06-20 23:52:49,976 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_13000.ckpt
+2023-06-20 23:54:10,235 Epoch 15, Training examples 7096
+2023-06-20 23:57:13,949 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-20 23:57:13,951 Evaluation global step=14000 validation examples #=519
+2023-06-20 23:57:57,726 translation_loss Average:24.88
+2023-06-20 23:57:57,726 recognition_loss Average:10.24
+2023-06-20 23:57:57,727 total_loss Average:35.12
+2023-06-20 23:57:58,032 WER: 25.43
+2023-06-20 23:57:58,228 bleu1 52.28
+2023-06-20 23:57:58,228 bleu2 39.85
+2023-06-20 23:57:58,228 bleu3 32.13
+2023-06-20 23:57:58,228 bleu4 26.93
+2023-06-20 23:57:58,228 ROUGE: 51.54
+2023-06-20 23:57:58,231 best_score=26.93
+2023-06-20 23:58:02,543 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_14000.ckpt
+2023-06-20 23:58:57,499 Epoch 16, Training examples 7096
+2023-06-21 00:02:31,879 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:02:31,880 Evaluation global step=15000 validation examples #=519
+2023-06-21 00:03:16,254 translation_loss Average:24.85
+2023-06-21 00:03:16,254 recognition_loss Average:10.11
+2023-06-21 00:03:16,255 total_loss Average:34.96
+2023-06-21 00:03:16,557 WER: 25.01
+2023-06-21 00:03:16,755 bleu1 52.02
+2023-06-21 00:03:16,755 bleu2 39.33
+2023-06-21 00:03:16,755 bleu3 31.44
+2023-06-21 00:03:16,755 bleu4 26.13
+2023-06-21 00:03:16,755 ROUGE: 51.40
+2023-06-21 00:03:16,758 best_score=26.93
+2023-06-21 00:03:21,462 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_15000.ckpt
+2023-06-21 00:04:00,198 Epoch 17, Training examples 7096
+2023-06-21 00:07:54,824 Epoch 18, Training examples 7096
+2023-06-21 00:08:05,423 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:08:05,424 Evaluation global step=16000 validation examples #=519
+2023-06-21 00:08:50,182 translation_loss Average:25.14
+2023-06-21 00:08:50,183 recognition_loss Average:10.15
+2023-06-21 00:08:50,183 total_loss Average:35.29
+2023-06-21 00:08:50,476 WER: 25.59
+2023-06-21 00:08:50,701 bleu1 52.50
+2023-06-21 00:08:50,701 bleu2 39.62
+2023-06-21 00:08:50,701 bleu3 31.61
+2023-06-21 00:08:50,701 bleu4 26.11
+2023-06-21 00:08:50,701 ROUGE: 51.15
+2023-06-21 00:08:50,705 best_score=26.93
+2023-06-21 00:08:55,086 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_16000.ckpt
+2023-06-21 00:12:38,571 Epoch 19, Training examples 7096
+2023-06-21 00:13:18,602 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:13:18,603 Evaluation global step=17000 validation examples #=519
+2023-06-21 00:14:03,038 translation_loss Average:25.18
+2023-06-21 00:14:03,039 recognition_loss Average:10.35
+2023-06-21 00:14:03,039 total_loss Average:35.53
+2023-06-21 00:14:03,334 WER: 24.90
+2023-06-21 00:14:03,526 bleu1 52.86
+2023-06-21 00:14:03,526 bleu2 39.78
+2023-06-21 00:14:03,526 bleu3 31.65
+2023-06-21 00:14:03,526 bleu4 26.13
+2023-06-21 00:14:03,526 ROUGE: 51.72
+2023-06-21 00:14:03,529 best_score=26.93
+2023-06-21 00:14:07,994 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_17000.ckpt
+2023-06-21 00:17:21,534 Epoch 20, Training examples 7096
+2023-06-21 00:18:31,468 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:18:31,469 Evaluation global step=18000 validation examples #=519
+2023-06-21 00:19:14,985 translation_loss Average:25.39
+2023-06-21 00:19:14,986 recognition_loss Average:10.55
+2023-06-21 00:19:14,987 total_loss Average:35.94
+2023-06-21 00:19:15,303 WER: 24.74
+2023-06-21 00:19:15,500 bleu1 51.51
+2023-06-21 00:19:15,501 bleu2 38.94
+2023-06-21 00:19:15,501 bleu3 31.27
+2023-06-21 00:19:15,501 bleu4 25.98
+2023-06-21 00:19:15,501 ROUGE: 50.99
+2023-06-21 00:19:15,504 best_score=26.93
+2023-06-21 00:19:20,316 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_18000.ckpt
+2023-06-21 00:22:22,559 Epoch 21, Training examples 7096
+2023-06-21 00:24:01,616 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:24:01,617 Evaluation global step=19000 validation examples #=519
+2023-06-21 00:24:48,191 translation_loss Average:25.64
+2023-06-21 00:24:48,192 recognition_loss Average:10.81
+2023-06-21 00:24:48,192 total_loss Average:36.45
+2023-06-21 00:24:48,483 WER: 25.19
+2023-06-21 00:24:48,675 bleu1 52.93
+2023-06-21 00:24:48,675 bleu2 39.90
+2023-06-21 00:24:48,675 bleu3 31.78
+2023-06-21 00:24:48,675 bleu4 26.31
+2023-06-21 00:24:48,675 ROUGE: 52.07
+2023-06-21 00:24:48,678 best_score=26.93
+2023-06-21 00:24:53,203 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_19000.ckpt
+2023-06-21 00:27:09,076 Epoch 22, Training examples 7096
+2023-06-21 00:29:18,354 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:29:18,355 Evaluation global step=20000 validation examples #=519
+2023-06-21 00:30:03,044 translation_loss Average:25.56
+2023-06-21 00:30:03,045 recognition_loss Average:10.55
+2023-06-21 00:30:03,046 total_loss Average:36.10
+2023-06-21 00:30:03,341 WER: 25.03
+2023-06-21 00:30:03,534 bleu1 52.32
+2023-06-21 00:30:03,535 bleu2 39.56
+2023-06-21 00:30:03,535 bleu3 31.64
+2023-06-21 00:30:03,535 bleu4 26.21
+2023-06-21 00:30:03,535 ROUGE: 51.52
+2023-06-21 00:30:03,537 best_score=26.93
+2023-06-21 00:30:07,891 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_20000.ckpt
+2023-06-21 00:31:53,150 Epoch 23, Training examples 7096
+2023-06-21 00:34:32,017 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:34:32,018 Evaluation global step=21000 validation examples #=519
+2023-06-21 00:35:40,787 translation_loss Average:25.64
+2023-06-21 00:35:40,787 recognition_loss Average:10.91
+2023-06-21 00:35:40,788 total_loss Average:36.54
+2023-06-21 00:35:41,084 WER: 25.17
+2023-06-21 00:35:41,281 bleu1 52.91
+2023-06-21 00:35:41,281 bleu2 39.99
+2023-06-21 00:35:41,281 bleu3 31.98
+2023-06-21 00:35:41,281 bleu4 26.57
+2023-06-21 00:35:41,281 ROUGE: 52.20
+2023-06-21 00:35:41,284 best_score=26.93
+2023-06-21 00:35:45,506 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_21000.ckpt
+2023-06-21 00:37:01,277 Epoch 24, Training examples 7096
+2023-06-21 00:40:10,096 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:40:10,097 Evaluation global step=22000 validation examples #=519
+2023-06-21 00:40:54,881 translation_loss Average:25.45
+2023-06-21 00:40:54,881 recognition_loss Average:10.74
+2023-06-21 00:40:54,881 total_loss Average:36.19
+2023-06-21 00:40:55,179 WER: 24.58
+2023-06-21 00:40:55,373 bleu1 53.40
+2023-06-21 00:40:55,373 bleu2 40.24
+2023-06-21 00:40:55,373 bleu3 32.05
+2023-06-21 00:40:55,373 bleu4 26.56
+2023-06-21 00:40:55,373 ROUGE: 52.44
+2023-06-21 00:40:55,376 best_score=26.93
+2023-06-21 00:40:59,554 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_22000.ckpt
+2023-06-21 00:41:45,537 Epoch 25, Training examples 7096
+2023-06-21 00:45:23,147 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:45:23,148 Evaluation global step=23000 validation examples #=519
+2023-06-21 00:46:07,308 translation_loss Average:25.56
+2023-06-21 00:46:07,310 recognition_loss Average:10.76
+2023-06-21 00:46:07,310 total_loss Average:36.32
+2023-06-21 00:46:07,605 WER: 24.74
+2023-06-21 00:46:07,800 bleu1 53.05
+2023-06-21 00:46:07,800 bleu2 40.01
+2023-06-21 00:46:07,800 bleu3 31.79
+2023-06-21 00:46:07,800 bleu4 26.08
+2023-06-21 00:46:07,800 ROUGE: 52.11
+2023-06-21 00:46:07,803 best_score=26.93
+2023-06-21 00:46:12,101 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_23000.ckpt
+2023-06-21 00:46:28,637 Epoch 26, Training examples 7096
+2023-06-21 00:50:23,494 Epoch 27, Training examples 7096
+2023-06-21 00:50:38,459 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:50:38,461 Evaluation global step=24000 validation examples #=519
+2023-06-21 00:51:46,762 translation_loss Average:25.67
+2023-06-21 00:51:46,764 recognition_loss Average:11.03
+2023-06-21 00:51:46,764 total_loss Average:36.70
+2023-06-21 00:51:47,068 WER: 25.14
+2023-06-21 00:51:47,269 bleu1 52.84
+2023-06-21 00:51:47,269 bleu2 40.06
+2023-06-21 00:51:47,269 bleu3 32.00
+2023-06-21 00:51:47,269 bleu4 26.43
+2023-06-21 00:51:47,269 ROUGE: 52.34
+2023-06-21 00:51:47,272 best_score=26.93
+2023-06-21 00:51:51,657 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_24000.ckpt
+2023-06-21 00:55:30,527 Epoch 28, Training examples 7096
+2023-06-21 00:56:15,395 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 00:56:15,396 Evaluation global step=25000 validation examples #=519
+2023-06-21 00:56:59,420 translation_loss Average:25.79
+2023-06-21 00:56:59,420 recognition_loss Average:10.95
+2023-06-21 00:56:59,421 total_loss Average:36.74
+2023-06-21 00:56:59,709 WER: 24.15
+2023-06-21 00:56:59,902 bleu1 52.99
+2023-06-21 00:56:59,902 bleu2 40.21
+2023-06-21 00:56:59,902 bleu3 32.11
+2023-06-21 00:56:59,902 bleu4 26.47
+2023-06-21 00:56:59,902 ROUGE: 52.18
+2023-06-21 00:56:59,904 best_score=26.93
+2023-06-21 00:57:04,123 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_25000.ckpt
+2023-06-21 01:00:14,233 Epoch 29, Training examples 7096
+2023-06-21 01:01:28,548 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:01:28,550 Evaluation global step=26000 validation examples #=519
+2023-06-21 01:02:12,862 translation_loss Average:25.77
+2023-06-21 01:02:12,863 recognition_loss Average:10.89
+2023-06-21 01:02:12,864 total_loss Average:36.66
+2023-06-21 01:02:13,156 WER: 23.99
+2023-06-21 01:02:13,347 bleu1 52.71
+2023-06-21 01:02:13,347 bleu2 39.86
+2023-06-21 01:02:13,347 bleu3 31.76
+2023-06-21 01:02:13,348 bleu4 26.27
+2023-06-21 01:02:13,348 ROUGE: 52.04
+2023-06-21 01:02:13,350 best_score=26.93
+2023-06-21 01:02:17,515 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_26000.ckpt
+2023-06-21 01:04:57,905 Epoch 30, Training examples 7096
+2023-06-21 01:06:42,034 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:06:42,035 Evaluation global step=27000 validation examples #=519
+2023-06-21 01:07:46,909 translation_loss Average:25.86
+2023-06-21 01:07:46,909 recognition_loss Average:11.07
+2023-06-21 01:07:46,909 total_loss Average:36.93
+2023-06-21 01:07:47,199 WER: 24.74
+2023-06-21 01:07:47,395 bleu1 52.82
+2023-06-21 01:07:47,395 bleu2 39.92
+2023-06-21 01:07:47,395 bleu3 31.85
+2023-06-21 01:07:47,395 bleu4 26.30
+2023-06-21 01:07:47,395 ROUGE: 51.81
+2023-06-21 01:07:47,398 best_score=26.93
+2023-06-21 01:07:51,502 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_27000.ckpt
+2023-06-21 01:10:02,006 Epoch 31, Training examples 7096
+2023-06-21 01:12:15,475 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:12:15,476 Evaluation global step=28000 validation examples #=519
+2023-06-21 01:12:58,901 translation_loss Average:25.75
+2023-06-21 01:12:58,902 recognition_loss Average:11.24
+2023-06-21 01:12:58,903 total_loss Average:36.98
+2023-06-21 01:12:59,211 WER: 24.50
+2023-06-21 01:12:59,436 bleu1 52.87
+2023-06-21 01:12:59,436 bleu2 40.01
+2023-06-21 01:12:59,436 bleu3 31.96
+2023-06-21 01:12:59,436 bleu4 26.47
+2023-06-21 01:12:59,436 ROUGE: 52.00
+2023-06-21 01:12:59,439 best_score=26.93
+2023-06-21 01:13:03,532 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_28000.ckpt
+2023-06-21 01:14:44,204 Epoch 32, Training examples 7096
+2023-06-21 01:17:26,303 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:17:26,304 Evaluation global step=29000 validation examples #=519
+2023-06-21 01:18:10,353 translation_loss Average:25.74
+2023-06-21 01:18:10,355 recognition_loss Average:11.20
+2023-06-21 01:18:10,355 total_loss Average:36.94
+2023-06-21 01:18:10,648 WER: 24.61
+2023-06-21 01:18:10,841 bleu1 53.70
+2023-06-21 01:18:10,841 bleu2 40.62
+2023-06-21 01:18:10,842 bleu3 32.33
+2023-06-21 01:18:10,842 bleu4 26.74
+2023-06-21 01:18:10,842 ROUGE: 52.50
+2023-06-21 01:18:10,844 best_score=26.93
+2023-06-21 01:18:15,069 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_29000.ckpt
+2023-06-21 01:19:26,213 Epoch 33, Training examples 7096
+2023-06-21 01:22:35,746 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:22:35,747 Evaluation global step=30000 validation examples #=519
+2023-06-21 01:23:43,679 translation_loss Average:25.73
+2023-06-21 01:23:43,680 recognition_loss Average:11.18
+2023-06-21 01:23:43,680 total_loss Average:36.92
+2023-06-21 01:23:43,978 WER: 24.31
+2023-06-21 01:23:44,180 bleu1 53.32
+2023-06-21 01:23:44,181 bleu2 40.37
+2023-06-21 01:23:44,181 bleu3 32.23
+2023-06-21 01:23:44,181 bleu4 26.71
+2023-06-21 01:23:44,181 ROUGE: 52.28
+2023-06-21 01:23:44,185 best_score=26.93
+2023-06-21 01:23:48,318 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_30000.ckpt
+2023-06-21 01:24:29,003 Epoch 34, Training examples 7096
+2023-06-21 01:28:06,980 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:28:06,981 Evaluation global step=31000 validation examples #=519
+2023-06-21 01:28:50,587 translation_loss Average:25.76
+2023-06-21 01:28:50,588 recognition_loss Average:11.13
+2023-06-21 01:28:50,589 total_loss Average:36.89
+2023-06-21 01:28:50,885 WER: 24.53
+2023-06-21 01:28:51,079 bleu1 53.43
+2023-06-21 01:28:51,079 bleu2 40.64
+2023-06-21 01:28:51,079 bleu3 32.47
+2023-06-21 01:28:51,079 bleu4 26.89
+2023-06-21 01:28:51,079 ROUGE: 52.55
+2023-06-21 01:28:51,081 best_score=26.93
+2023-06-21 01:28:55,149 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_31000.ckpt
+2023-06-21 01:29:07,013 Epoch 35, Training examples 7096
+2023-06-21 01:32:59,565 Epoch 36, Training examples 7096
+2023-06-21 01:33:18,586 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:33:18,587 Evaluation global step=32000 validation examples #=519
+2023-06-21 01:34:00,588 translation_loss Average:25.72
+2023-06-21 01:34:00,589 recognition_loss Average:11.15
+2023-06-21 01:34:00,589 total_loss Average:36.87
+2023-06-21 01:34:00,876 WER: 24.29
+2023-06-21 01:34:01,073 bleu1 53.71
+2023-06-21 01:34:01,073 bleu2 40.66
+2023-06-21 01:34:01,073 bleu3 32.50
+2023-06-21 01:34:01,073 bleu4 26.92
+2023-06-21 01:34:01,073 ROUGE: 52.48
+2023-06-21 01:34:01,076 best_score=26.93
+2023-06-21 01:34:04,907 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_32000.ckpt
+2023-06-21 01:37:32,250 Epoch 37, Training examples 7096
+2023-06-21 01:38:19,643 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:38:19,645 Evaluation global step=33000 validation examples #=519
+2023-06-21 01:39:03,378 translation_loss Average:25.76
+2023-06-21 01:39:03,379 recognition_loss Average:11.17
+2023-06-21 01:39:03,380 total_loss Average:36.93
+2023-06-21 01:39:03,679 WER: 24.47
+2023-06-21 01:39:03,873 bleu1 53.46
+2023-06-21 01:39:03,873 bleu2 40.42
+2023-06-21 01:39:03,873 bleu3 32.28
+2023-06-21 01:39:03,873 bleu4 26.72
+2023-06-21 01:39:03,873 ROUGE: 52.29
+2023-06-21 01:39:03,876 best_score=26.93
+2023-06-21 01:39:08,204 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_33000.ckpt
+2023-06-21 01:42:06,876 Epoch 38, Training examples 7096
+2023-06-21 01:43:22,109 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:43:22,110 Evaluation global step=34000 validation examples #=519
+2023-06-21 01:44:04,697 translation_loss Average:25.75
+2023-06-21 01:44:04,697 recognition_loss Average:11.14
+2023-06-21 01:44:04,698 total_loss Average:36.88
+2023-06-21 01:44:04,984 WER: 24.37
+2023-06-21 01:44:05,178 bleu1 53.63
+2023-06-21 01:44:05,178 bleu2 40.55
+2023-06-21 01:44:05,178 bleu3 32.34
+2023-06-21 01:44:05,178 bleu4 26.80
+2023-06-21 01:44:05,178 ROUGE: 52.67
+2023-06-21 01:44:05,181 best_score=26.93
+2023-06-21 01:44:09,262 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_34000.ckpt
+2023-06-21 01:46:38,750 Epoch 39, Training examples 7096
+2023-06-21 01:48:24,658 {'recognition': {'beam_size': 1}, 'translation': {'length_penalty': 1, 'max_length': 100, 'num_beams': 5}}
+2023-06-21 01:48:24,659 Evaluation global step=35000 validation examples #=519
+2023-06-21 01:49:08,369 translation_loss Average:25.75
+2023-06-21 01:49:08,370 recognition_loss Average:11.16
+2023-06-21 01:49:08,370 total_loss Average:36.91
+2023-06-21 01:49:08,657 WER: 24.39
+2023-06-21 01:49:08,849 bleu1 53.53
+2023-06-21 01:49:08,849 bleu2 40.51
+2023-06-21 01:49:08,849 bleu3 32.33
+2023-06-21 01:49:08,849 bleu4 26.84
+2023-06-21 01:49:08,849 ROUGE: 52.61
+2023-06-21 01:49:08,852 best_score=26.93
+2023-06-21 01:49:13,294 Save model state as experiments/outputs/SingleStream/phoenix-2014t_s2t/ckpts/step_35000.ckpt
