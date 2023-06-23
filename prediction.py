@@ -44,7 +44,7 @@ def evaluation(model, val_dataloader, cfg,
         do_translation=True, do_recognition=True):  
     logger = get_logger()
     logger.info(generate_cfg)
-    print()
+    
     if os.environ.get('enable_pbar', '1')=='1':
         pbar = ProgressBar(n_total=len(val_dataloader), desc='Validation')
     else:
@@ -199,7 +199,7 @@ if __name__ == "__main__":
         type=str
     )
     args = parser.parse_args()
-    cfg = load_config(args.config)
+    cfg = load_config(args.config) #cfg的起源！！！！
     model_dir = cfg['training']['model_dir']
     os.makedirs(model_dir, exist_ok=True)
     global logger
