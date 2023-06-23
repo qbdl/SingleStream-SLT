@@ -33,7 +33,7 @@ def neq_load_customized(model, pretrained_dict, verbose=False):
     model_dict = model.state_dict()
     tmp = {}
     if verbose:
-        print(list(model_dict.keys()))
+        # print(list(model_dict.keys()))
         print('\n=======Check Weights Loading======')
         print('Weights not used from pretrained file:')
     for k, v in pretrained_dict.items():
@@ -220,8 +220,10 @@ def is_main_process():
 
 def init_DDP():
     local_rank = int(os.environ['LOCAL_RANK'])
+    print("init_DDP local_rank: ", local_rank)
     torch.cuda.set_device(local_rank)
     device = torch.device('cuda:{}'.format(local_rank))
+    print("init_DDP device: ", device)
     torch.distributed.init_process_group(backend="nccl", init_method="env://")    
     return local_rank, int(os.environ['WORLD_SIZE']), device
 

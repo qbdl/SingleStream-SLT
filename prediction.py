@@ -44,7 +44,6 @@ def evaluation(model, val_dataloader, cfg,
         do_translation=True, do_recognition=True):  
     logger = get_logger()
     logger.info(generate_cfg)
-    
     if os.environ.get('enable_pbar', '1')=='1':
         pbar = ProgressBar(n_total=len(val_dataloader), desc='Validation')
     else:
@@ -92,7 +91,7 @@ def evaluation(model, val_dataloader, cfg,
                             # print(results[name]['gls_ref'])
 
                     else:
-                        print(logits_name)
+                        print("logits_name:",logits_name)
                         raise ValueError
                 #multi-head
                 if 'aux_logits' in forward_output:
@@ -116,7 +115,7 @@ def evaluation(model, val_dataloader, cfg,
                 #decoded_sequences
                 for name, txt_hyp, txt_ref in zip(batch['name'], generate_output['decoded_sequences'], batch['text']):
                     results[name]['txt_hyp'], results[name]['txt_ref'] = txt_hyp, txt_ref
-
+                    # print(f"Name: {name}\nTranslated Text: {txt_hyp}\nOriginal Text: {txt_ref}\n{'-'*50}")
             #misc
             if pbar:
                 pbar(step)
@@ -181,6 +180,7 @@ def evaluation(model, val_dataloader, cfg,
 
 
 if __name__ == "__main__":
+    print("aaa")
     parser = argparse.ArgumentParser("SLT baseline Testing")
     parser.add_argument(
         "--config",
@@ -198,8 +198,9 @@ if __name__ == "__main__":
         default='best.ckpt',
         type=str
     )
+    print("bbb")
     args = parser.parse_args()
-    cfg = load_config(args.config) #cfg的起源！！！！
+    cfg = load_config(args.config)
     model_dir = cfg['training']['model_dir']
     os.makedirs(model_dir, exist_ok=True)
     global logger
